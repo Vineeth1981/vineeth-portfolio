@@ -3,622 +3,681 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Vineeth Reddy Nomula - Supply Chain Analyst Portfolio. 3 years experience in SAP, Power BI, Procurement, Demand Planning. Open to work across US.">
-<meta name="keywords" content="Supply Chain Analyst, Procurement Analyst, SAP, Power BI, Demand Planning, Operations Analyst, Alpharetta GA">
-<title>Vineeth Reddy Nomula | Supply Chain Analyst</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Vineeth Reddy Nomula - Supply Chain Analyst. 3 years experience in SAP, Power BI, Procurement, Demand Planning. Open to work across US.">
+<title>Vineeth Reddy Nomula</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-:root{
-  --bg:#03080f;
-  --bg2:#060d18;
-  --bg3:#091420;
-  --card:#0a1628;
-  --border:rgba(56,189,248,0.1);
-  --border2:rgba(56,189,248,0.2);
-  --cyan:#38bdf8;
-  --cyan2:#0ea5e9;
-  --purple:#8b5cf6;
-  --green:#22c55e;
-  --amber:#f59e0b;
-  --red:#ef4444;
-  --white:#f8fafc;
-  --gray:#94a3b8;
-  --gray2:#64748b;
-}
-body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;overflow-x:hidden}
+body{background:#fafafa;color:#1a1a1a;font-family:'Inter',sans-serif;overflow-x:hidden}
 ::-webkit-scrollbar{width:3px}
-::-webkit-scrollbar-thumb{background:var(--cyan);border-radius:2px}
-
-/* BG */
-.bg-mesh{position:fixed;inset:0;z-index:0;pointer-events:none;
-  background:radial-gradient(ellipse 120% 80% at 80% 10%,rgba(56,189,248,.06) 0,transparent 60%),
-  radial-gradient(ellipse 80% 60% at 10% 80%,rgba(139,92,246,.05) 0,transparent 60%),
-  linear-gradient(rgba(56,189,248,.015) 1px,transparent 1px) 0 0/44px 44px,
-  linear-gradient(90deg,rgba(56,189,248,.015) 1px,transparent 1px) 0 0/44px 44px}
+::-webkit-scrollbar-thumb{background:#1a1a1a;border-radius:2px}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:1000;
-  padding:.875rem 2rem;display:flex;justify-content:space-between;align-items:center;
-  background:rgba(3,8,15,.92);backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--border)}
-.nav-logo{font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--cyan);letter-spacing:.12em}
-.nav-menu{display:flex;gap:1.5rem;list-style:none}
-.nav-menu a{font-size:.8rem;color:var(--gray);text-decoration:none;font-weight:500;transition:color .2s}
-.nav-menu a:hover{color:var(--cyan)}
-.nav-cta{padding:.5rem 1.25rem;background:var(--cyan);color:var(--bg);font-size:.78rem;font-weight:700;
-  text-decoration:none;letter-spacing:.06em;transition:all .2s;
-  box-shadow:0 0 20px rgba(56,189,248,.3)}
-.nav-cta:hover{background:#fff;box-shadow:0 0 30px rgba(56,189,248,.5)}
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:1.25rem 3rem;
+  display:flex;justify-content:space-between;align-items:center;
+  background:rgba(250,250,250,0.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(0,0,0,0.06);
+}
+.nav-logo{font-size:.88rem;font-weight:700;color:#1a1a1a;letter-spacing:-.01em;text-decoration:none}
+.nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
+.nav-links a{font-size:.82rem;color:#666;text-decoration:none;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:#1a1a1a}
+.nav-resume{
+  padding:.5rem 1.25rem;
+  background:#1a1a1a;color:#fff;
+  font-size:.78rem;font-weight:600;
+  text-decoration:none;letter-spacing:.03em;
+  transition:all .2s;border-radius:2px
+}
+.nav-resume:hover{background:#333;transform:translateY(-1px)}
 
-/* OTW */
-.otw{position:relative;z-index:10;margin-top:56px;
-  background:linear-gradient(90deg,rgba(34,197,94,.1),rgba(56,189,248,.1),rgba(34,197,94,.1));
-  border-bottom:1px solid rgba(34,197,94,.25);
-  padding:.6rem;text-align:center;overflow:hidden}
-.otw-text{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--green);letter-spacing:.1em;
-  display:inline-flex;align-items:center;gap:.5rem}
-.dot{width:6px;height:6px;background:var(--green);border-radius:50%;
-  animation:blink 1.4s ease-in-out infinite}
+/* OTW BANNER */
+.otw{
+  margin-top:64px;
+  background:#f0fdf4;
+  border-bottom:1px solid #bbf7d0;
+  padding:.6rem;text-align:center;
+  font-size:.78rem;color:#16a34a;font-weight:600;
+  display:flex;align-items:center;justify-content:center;gap:.5rem
+}
+.otw-dot{
+  width:7px;height:7px;background:#16a34a;border-radius:50%;
+  animation:blink 1.5s ease-in-out infinite
+}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
-.otw::after{content:'';position:absolute;inset:0;
-  background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,.04) 50%,transparent 100%);
-  animation:sweep 3s linear infinite}
-@keyframes sweep{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
 
 /* HERO */
-.hero{position:relative;z-index:1;min-height:100vh;
-  display:grid;grid-template-columns:1fr 420px;gap:4rem;
-  align-items:center;max-width:1200px;margin:0 auto;padding:4rem 2rem}
+.hero{
+  max-width:1100px;margin:0 auto;
+  padding:6rem 3rem 5rem;
+  display:grid;grid-template-columns:1fr 420px;
+  gap:5rem;align-items:center
+}
+.hero-greeting{
+  font-size:.88rem;color:#666;font-weight:500;
+  margin-bottom:.75rem;letter-spacing:.02em
+}
+.hero h1{
+  font-size:clamp(3rem,6vw,5rem);
+  font-weight:800;line-height:1.05;
+  letter-spacing:-.03em;margin-bottom:1.5rem;color:#1a1a1a
+}
+.hero h1 em{
+  font-family:'Playfair Display',serif;
+  font-style:italic;color:#2563eb
+}
+.hero-bio{
+  font-size:1rem;color:#555;line-height:1.8;
+  max-width:460px;margin-bottom:2.25rem
+}
+.hero-bio strong{color:#1a1a1a;font-weight:600}
+.hero-btns{display:flex;gap:.85rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.btn-main{
+  padding:.85rem 2rem;
+  background:#1a1a1a;color:#fff;
+  font-weight:600;font-size:.85rem;
+  text-decoration:none;letter-spacing:.02em;
+  transition:all .3s;border-radius:2px
+}
+.btn-main:hover{background:#2563eb;transform:translateY(-2px)}
+.btn-outline{
+  padding:.85rem 2rem;
+  background:transparent;color:#1a1a1a;
+  font-weight:600;font-size:.85rem;
+  text-decoration:none;
+  border:1.5px solid #1a1a1a;
+  transition:all .3s;border-radius:2px
+}
+.btn-outline:hover{border-color:#2563eb;color:#2563eb;transform:translateY(-2px)}
+.hero-socials{display:flex;gap:1.25rem;align-items:center}
+.social-link{
+  font-size:.8rem;color:#888;text-decoration:none;
+  font-weight:500;transition:color .2s;
+  display:flex;align-items:center;gap:.35rem
+}
+.social-link:hover{color:#1a1a1a}
 
-.chip{display:inline-flex;align-items:center;gap:.4rem;
-  padding:.35rem .85rem;background:rgba(56,189,248,.07);
-  border:1px solid rgba(56,189,248,.18);
-  font-family:'JetBrains Mono',monospace;font-size:.72rem;
-  color:var(--cyan);letter-spacing:.1em;margin-bottom:1.5rem}
+/* PHOTO */
+.photo-wrap{position:relative}
+.photo-frame{
+  width:100%;aspect-ratio:3/4;
+  overflow:hidden;position:relative;
+  background:#e5e7eb;
+}
+.photo-frame img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:top;
+  display:block;transition:transform .5s ease
+}
+.photo-frame:hover img{transform:scale(1.02)}
+.photo-badge{
+  position:absolute;bottom:-16px;left:24px;
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.08);
+  padding:.75rem 1.25rem;
+  box-shadow:0 4px 20px rgba(0,0,0,0.08);
+  display:flex;flex-direction:column;gap:.15rem
+}
+.badge-val{font-size:1.35rem;font-weight:800;color:#2563eb;line-height:1}
+.badge-lbl{font-size:.7rem;color:#888;font-weight:500}
 
-h1{font-size:clamp(3.2rem,7vw,5.5rem);font-weight:800;line-height:1;
-  letter-spacing:-.03em;margin-bottom:1.5rem}
-.h1-name{display:block;color:var(--white)}
-.h1-grad{display:block;
-  background:linear-gradient(135deg,var(--cyan) 0%,var(--purple) 60%,var(--amber) 100%);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+/* STATS */
+.stats-bar{
+  background:#fff;
+  border-top:1px solid rgba(0,0,0,0.06);
+  border-bottom:1px solid rgba(0,0,0,0.06);
+  padding:0;
+  display:grid;grid-template-columns:repeat(4,1fr)
+}
+.stat-tile{
+  padding:2rem 1.5rem;text-align:center;
+  border-right:1px solid rgba(0,0,0,0.06);
+  transition:background .2s
+}
+.stat-tile:last-child{border-right:none}
+.stat-tile:hover{background:#f8faff}
+.stat-num{
+  font-size:2.25rem;font-weight:800;color:#1a1a1a;
+  line-height:1;margin-bottom:.4rem;letter-spacing:-.02em
+}
+.stat-num span{color:#2563eb}
+.stat-desc{font-size:.78rem;color:#888;line-height:1.5}
 
-.hero-desc{font-size:1rem;color:var(--gray);line-height:1.75;max-width:480px;margin-bottom:2rem}
-.hero-desc strong{color:var(--white);font-weight:600}
+/* SECTIONS */
+.section{max-width:1100px;margin:0 auto;padding:5rem 3rem}
+.section-tag{
+  font-size:.72rem;font-weight:700;color:#2563eb;
+  letter-spacing:.15em;text-transform:uppercase;
+  margin-bottom:.65rem
+}
+.section-title{
+  font-size:clamp(2rem,3.5vw,2.75rem);font-weight:800;
+  letter-spacing:-.02em;margin-bottom:.65rem;color:#1a1a1a
+}
+.section-sub{font-size:.9rem;color:#888;line-height:1.65;max-width:450px;margin-bottom:3rem}
+.divider{border:none;border-top:1px solid rgba(0,0,0,0.06);max-width:1100px;margin:0 auto}
 
-.hero-btns{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:2.5rem}
-.btn-p{padding:.8rem 1.75rem;background:linear-gradient(135deg,var(--cyan),var(--cyan2));
-  color:var(--bg);font-weight:700;font-size:.85rem;text-decoration:none;
-  transition:all .3s;letter-spacing:.03em}
-.btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(56,189,248,.35)}
-.btn-s{padding:.8rem 1.75rem;background:transparent;color:var(--white);
-  font-weight:600;font-size:.85rem;text-decoration:none;
-  border:1px solid rgba(255,255,255,.15);transition:all .3s}
-.btn-s:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px)}
-
-.tags{display:flex;flex-wrap:wrap;gap:.4rem}
-.tag{padding:.25rem .65rem;background:rgba(255,255,255,.04);
-  border:1px solid rgba(255,255,255,.08);font-size:.75rem;color:var(--gray2);
-  transition:all .2s;cursor:default}
-.tag:hover{border-color:var(--cyan);color:var(--cyan)}
-
-/* ID CARD */
-.id-card{background:var(--card);border:1px solid var(--border);
-  padding:2rem;position:relative;overflow:hidden}
-.id-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber))}
-.id-av{width:72px;height:72px;border-radius:50%;
-  background:linear-gradient(135deg,var(--cyan),var(--purple));
-  display:flex;align-items:center;justify-content:center;
-  font-weight:800;font-size:1.5rem;color:var(--bg);
-  font-family:'JetBrains Mono',monospace;margin-bottom:1rem}
-.id-name{font-size:1.05rem;font-weight:700;margin-bottom:.2rem}
-.id-role{font-family:'JetBrains Mono',monospace;font-size:.72rem;
-  color:var(--cyan);margin-bottom:1.25rem;letter-spacing:.06em}
-.id-grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:1.25rem}
-.id-stat{background:rgba(56,189,248,.05);border:1px solid var(--border);
-  padding:.7rem;text-align:center}
-.id-val{display:block;font-family:'JetBrains Mono',monospace;font-size:1.35rem;
-  font-weight:600;color:var(--cyan);line-height:1}
-.id-lbl{font-size:.68rem;color:var(--gray2);margin-top:.2rem;display:block}
-.id-info{display:flex;flex-direction:column;gap:.45rem}
-.id-row{display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--gray)}
-.id-row span:first-child{color:var(--cyan);font-size:.85rem}
-.avail-badge{display:flex;align-items:center;gap:.5rem;
-  padding:.5rem .85rem;background:rgba(34,197,94,.08);
-  border:1px solid rgba(34,197,94,.2);margin-top:1rem}
-.avail-text{font-size:.75rem;color:var(--green);font-weight:600}
-
-/* NUMBERS */
-.numbers{position:relative;z-index:1;
-  display:grid;grid-template-columns:repeat(4,1fr);
-  background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.num-tile{padding:2.25rem 1.5rem;text-align:center;
-  border-right:1px solid var(--border);transition:background .3s;position:relative;overflow:hidden}
-.num-tile:last-child{border-right:none}
-.num-tile:hover{background:var(--bg3)}
-.num-tile::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,var(--cyan),var(--purple));
-  transform:scaleX(0);transition:transform .3s}
-.num-tile:hover::after{transform:scaleX(1)}
-.num-big{font-family:'JetBrains Mono',monospace;font-size:2.75rem;font-weight:600;
-  color:var(--cyan);display:block;line-height:1;margin-bottom:.5rem}
-.num-label{font-size:.78rem;color:var(--gray);line-height:1.5}
-
-/* WRAP */
-.wrap{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:5rem 2rem}
-.eyebrow{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--cyan);
-  letter-spacing:.18em;text-transform:uppercase;margin-bottom:.65rem;
-  display:flex;align-items:center;gap:.6rem}
-.eyebrow::after{content:'';flex:1;height:1px;background:var(--border);max-width:60px}
-.sec-title{font-size:clamp(1.85rem,3.5vw,2.5rem);font-weight:800;
-  letter-spacing:-.02em;margin-bottom:.65rem}
-.sec-sub{color:var(--gray);font-size:.9rem;line-height:1.65;
-  max-width:460px;margin-bottom:3rem}
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.about-text p{font-size:.95rem;color:#555;line-height:1.85;margin-bottom:1.25rem}
+.about-text p strong{color:#1a1a1a;font-weight:600}
+.about-facts{display:flex;flex-direction:column;gap:.85rem}
+.fact{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem;
+  background:#fff;border:1px solid rgba(0,0,0,0.07);
+  transition:border-color .2s}
+.fact:hover{border-color:#2563eb}
+.fact-icon{font-size:1.1rem;width:36px;text-align:center}
+.fact-text{font-size:.85rem;color:#555;line-height:1.5}
+.fact-text strong{color:#1a1a1a;font-weight:600;display:block}
 
 /* IMPACT */
-.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.ic{background:var(--card);border:1px solid var(--border);
-  padding:1.6rem;transition:all .3s;position:relative;overflow:hidden;cursor:default}
-.ic::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;
-  background:linear-gradient(135deg,rgba(56,189,248,.03),transparent);
-  opacity:0;transition:opacity .3s}
-.ic:hover{border-color:var(--border2);transform:translateY(-3px);
-  box-shadow:0 16px 32px rgba(0,0,0,.3)}
-.ic:hover::before{opacity:1}
-.ic-ico{width:36px;height:36px;background:rgba(56,189,248,.07);
-  border:1px solid var(--border);display:flex;align-items:center;
-  justify-content:center;font-size:1rem;margin-bottom:.85rem}
-.ic-num{font-family:'JetBrains Mono',monospace;font-size:2.25rem;font-weight:600;
-  color:var(--cyan);line-height:1;margin-bottom:.4rem}
-.ic-desc{font-size:.83rem;color:var(--gray);line-height:1.6;margin-bottom:.85rem}
-.ic-badge{display:inline-block;padding:.2rem .55rem;
-  background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.18);
-  font-family:'JetBrains Mono',monospace;font-size:.65rem;color:var(--amber)}
+.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.icard{
+  background:#fff;border:1px solid rgba(0,0,0,0.07);
+  padding:1.75rem;transition:all .3s;cursor:default
+}
+.icard:hover{border-color:#2563eb;transform:translateY(-3px);
+  box-shadow:0 12px 32px rgba(37,99,235,0.08)}
+.icard-num{
+  font-size:2.5rem;font-weight:800;color:#2563eb;
+  line-height:1;margin-bottom:.5rem;letter-spacing:-.02em
+}
+.icard-desc{font-size:.85rem;color:#666;line-height:1.6;margin-bottom:.85rem}
+.icard-co{font-size:.7rem;font-weight:700;color:#999;letter-spacing:.1em;text-transform:uppercase}
 
 /* SKILLS */
-.sk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
-.sk-card{background:var(--card);border:1px solid var(--border);
-  padding:1.6rem;transition:border-color .3s}
-.sk-card:hover{border-color:var(--border2)}
-.sk-head{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--cyan);
-  letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.25rem;
-  display:flex;align-items:center;gap:.4rem}
-.sk-rows{display:flex;flex-direction:column;gap:.85rem}
-.sk-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:.3rem}
-.sk-name{font-size:.83rem;color:var(--white);font-weight:500}
-.sk-pct{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--cyan)}
-.sk-bar{height:2px;background:rgba(255,255,255,.06);border-radius:1px;overflow:hidden}
-.sk-fill{height:100%;background:linear-gradient(90deg,var(--cyan),var(--purple));
-  border-radius:1px}
-.sk-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
-.sk-tag{padding:.25rem .65rem;background:rgba(56,189,248,.06);
-  border:1px solid var(--border);font-size:.72rem;color:var(--gray)}
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+.sk{background:#fff;border:1px solid rgba(0,0,0,0.07);padding:1.6rem;transition:border-color .3s}
+.sk:hover{border-color:#2563eb}
+.sk-title{font-size:.72rem;font-weight:700;color:#1a1a1a;
+  letter-spacing:.12em;text-transform:uppercase;margin-bottom:1.1rem}
+.sk-items{display:flex;flex-direction:column;gap:.8rem}
+.sk-row{display:flex;justify-content:space-between;margin-bottom:.3rem}
+.sk-name{font-size:.83rem;color:#333;font-weight:500}
+.sk-pct{font-size:.75rem;color:#2563eb;font-weight:600}
+.sk-bar{height:2px;background:#f0f0f0;border-radius:1px}
+.sk-fill{height:100%;background:linear-gradient(90deg,#2563eb,#7c3aed);border-radius:1px}
 
 /* EXPERIENCE */
-.exp-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
-.ec{background:var(--card);border:1px solid var(--border);
-  padding:1.85rem;position:relative;overflow:hidden;transition:all .3s}
-.ec::before{content:'';position:absolute;top:0;left:0;width:2px;height:100%;
-  background:linear-gradient(180deg,var(--cyan),var(--purple))}
-.ec:hover{border-color:var(--border2);transform:translateY(-3px)}
-.ec-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.4rem}
-.ec-co{font-size:1.1rem;font-weight:700}
-.ec-date{font-family:'JetBrains Mono',monospace;font-size:.68rem;
-  color:var(--gray2);text-align:right;line-height:1.5}
-.ec-role{display:inline-block;padding:.2rem .6rem;
-  background:rgba(56,189,248,.07);border:1px solid var(--border);
-  font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--cyan);margin-bottom:1.1rem}
-.ec-list{list-style:none;display:flex;flex-direction:column;gap:.55rem}
-.ec-list li{font-size:.82rem;color:var(--gray);line-height:1.6;
+.exp-list{display:flex;flex-direction:column;gap:1.25rem}
+.exp-card{
+  background:#fff;border:1px solid rgba(0,0,0,0.07);
+  padding:2rem;transition:all .3s;
+  display:grid;grid-template-columns:200px 1fr;gap:2rem
+}
+.exp-card:hover{border-color:#2563eb;box-shadow:0 8px 24px rgba(37,99,235,0.06)}
+.exp-left{}
+.exp-co{font-size:1rem;font-weight:700;color:#1a1a1a;margin-bottom:.25rem}
+.exp-period{font-size:.75rem;color:#888;margin-bottom:.5rem}
+.exp-loc{font-size:.75rem;color:#888}
+.exp-chips{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.85rem}
+.exp-chip{padding:.2rem .55rem;background:#eff6ff;
+  border:1px solid #bfdbfe;font-size:.68rem;color:#2563eb;font-weight:500}
+.exp-right{}
+.exp-role{font-size:.75rem;font-weight:700;color:#2563eb;
+  letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem}
+.exp-points{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.exp-points li{font-size:.85rem;color:#555;line-height:1.6;
   padding-left:.9rem;position:relative}
-.ec-list li::before{content:'▸';position:absolute;left:0;color:var(--cyan);font-size:.7rem;top:.1rem}
-.ec-list li strong{color:var(--white)}
-.ec-chips{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:1.1rem}
-.ec-chip{padding:.18rem .55rem;background:rgba(139,92,246,.08);
-  border:1px solid rgba(139,92,246,.15);font-size:.68rem;color:#a78bfa;
-  font-family:'JetBrains Mono',monospace}
+.exp-points li::before{content:'→';position:absolute;left:0;color:#2563eb;font-size:.75rem}
+.exp-points li strong{color:#1a1a1a;font-weight:600}
 
 /* EDUCATION */
-.edu-row{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:3rem}
-.edu-c{background:var(--card);border:1px solid var(--border);
-  padding:1.75rem;position:relative;overflow:hidden;transition:all .3s}
-.edu-c::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,var(--amber),#f97316)}
-.edu-c:hover{border-color:rgba(245,158,11,.25);transform:translateY(-3px)}
-.edu-ico{width:40px;height:40px;background:rgba(245,158,11,.08);
-  border:1px solid rgba(245,158,11,.18);display:flex;align-items:center;
-  justify-content:center;font-size:1.1rem;margin-bottom:.9rem}
-.edu-deg{font-size:.95rem;font-weight:700;margin-bottom:.25rem}
-.edu-sch{font-size:.82rem;color:var(--amber);font-weight:600;margin-bottom:.2rem}
-.edu-meta{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--gray2)}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:3rem}
+.edu-card{background:#fff;border:1px solid rgba(0,0,0,0.07);
+  padding:1.75rem;transition:all .3s;position:relative;overflow:hidden}
+.edu-card:hover{border-color:#f59e0b;box-shadow:0 8px 24px rgba(245,158,11,0.06)}
+.edu-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,#f59e0b,#ef4444)}
+.edu-icon{font-size:1.5rem;margin-bottom:.85rem}
+.edu-deg{font-size:.95rem;font-weight:700;color:#1a1a1a;margin-bottom:.3rem}
+.edu-school{font-size:.85rem;color:#f59e0b;font-weight:600;margin-bottom:.2rem}
+.edu-meta{font-size:.75rem;color:#888}
 
 /* CERTS */
 .cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.85rem}
-.cert-c{background:var(--card);border:1px solid var(--border);
-  padding:1.1rem 1.25rem;display:flex;align-items:center;gap:.85rem;transition:all .3s}
-.cert-c:hover{border-color:rgba(34,197,94,.25);transform:translateX(3px)}
-.cert-ico{width:34px;height:34px;background:rgba(34,197,94,.08);
-  border:1px solid rgba(34,197,94,.18);display:flex;align-items:center;
-  justify-content:center;font-size:.9rem;flex-shrink:0}
-.cert-name{font-size:.82rem;font-weight:600;margin-bottom:.15rem}
-.cert-by{font-size:.72rem;color:var(--green);font-family:'JetBrains Mono',monospace}
-.cert-yr{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:.65rem;
-  padding:.18rem .45rem;background:rgba(34,197,94,.08);
-  border:1px solid rgba(34,197,94,.18);color:var(--green);white-space:nowrap}
-.cert-yr.ip{background:rgba(245,158,11,.08);border-color:rgba(245,158,11,.18);color:var(--amber)}
+.cert{background:#fff;border:1px solid rgba(0,0,0,0.07);
+  padding:1rem 1.25rem;display:flex;align-items:center;gap:.85rem;transition:all .3s}
+.cert:hover{border-color:#16a34a;transform:translateX(3px)}
+.cert-ico{font-size:1rem;width:32px;text-align:center}
+.cert-name{font-size:.83rem;font-weight:600;color:#1a1a1a;margin-bottom:.15rem}
+.cert-by{font-size:.72rem;color:#16a34a;font-weight:500}
+.cert-badge{margin-left:auto;font-size:.65rem;font-weight:700;
+  padding:.2rem .5rem;background:#f0fdf4;border:1px solid #bbf7d0;
+  color:#16a34a;white-space:nowrap}
+.cert-badge.ip{background:#fffbeb;border-color:#fde68a;color:#d97706}
 
 /* PROJECT */
-.proj-box{background:var(--card);border:1px solid var(--border);overflow:hidden;
-  transition:border-color .3s}
-.proj-box:hover{border-color:rgba(139,92,246,.3)}
-.proj-top{background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(56,189,248,.06));
-  padding:2.25rem;border-bottom:1px solid var(--border)}
-.proj-lbl{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:#a78bfa;
-  letter-spacing:.14em;text-transform:uppercase;margin-bottom:.6rem}
-.proj-title{font-size:1.6rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.75rem}
-.proj-desc{font-size:.88rem;color:var(--gray);line-height:1.7;max-width:580px}
-.proj-mid{display:grid;grid-template-columns:1fr 1fr;
-  border-top:1px solid var(--border)}
-.proj-left{padding:2rem;border-right:1px solid var(--border)}
+.proj-box{background:#fff;border:1px solid rgba(0,0,0,0.07);overflow:hidden}
+.proj-header{
+  padding:2.5rem;
+  background:linear-gradient(135deg,#eff6ff,#f5f3ff);
+  border-bottom:1px solid rgba(0,0,0,0.06)
+}
+.proj-tag{font-size:.72rem;font-weight:700;color:#7c3aed;
+  letter-spacing:.12em;text-transform:uppercase;margin-bottom:.65rem}
+.proj-title{font-size:1.75rem;font-weight:800;letter-spacing:-.02em;
+  margin-bottom:.75rem;color:#1a1a1a}
+.proj-desc{font-size:.9rem;color:#666;line-height:1.75;max-width:580px}
+.proj-body{display:grid;grid-template-columns:1fr 1fr}
+.proj-left{padding:2rem;border-right:1px solid rgba(0,0,0,0.06)}
 .proj-right{padding:2rem}
-.proj-sec-title{font-family:'JetBrains Mono',monospace;font-size:.68rem;
-  color:var(--cyan);letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.1rem}
-.proj-results{display:flex;flex-direction:column;gap:.85rem}
-.pr-item{display:flex;gap:.75rem;align-items:flex-start}
-.pr-dot{width:7px;height:7px;background:var(--cyan);border-radius:50%;
-  margin-top:.35rem;flex-shrink:0}
-.pr-text{font-size:.83rem;color:var(--gray);line-height:1.6}
-.pr-text strong{color:var(--white)}
-.pm-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1.5rem}
-.pm{background:rgba(56,189,248,.04);border:1px solid var(--border);
-  padding:1rem;text-align:center}
-.pm-val{font-family:'JetBrains Mono',monospace;font-size:1.6rem;font-weight:600;
-  color:var(--cyan);display:block;margin-bottom:.2rem}
-.pm-lbl{font-size:.7rem;color:var(--gray2)}
-.tech-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}
-.tech-p{padding:.25rem .65rem;background:rgba(139,92,246,.08);
-  border:1px solid rgba(139,92,246,.18);font-family:'JetBrains Mono',monospace;
-  font-size:.68rem;color:#a78bfa}
+.proj-sec{font-size:.7rem;font-weight:700;color:#2563eb;
+  letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.1rem}
+.proj-items{display:flex;flex-direction:column;gap:.85rem}
+.proj-item{display:flex;gap:.75rem}
+.proj-dot{width:6px;height:6px;background:#2563eb;border-radius:50%;
+  margin-top:.4rem;flex-shrink:0}
+.proj-text{font-size:.85rem;color:#666;line-height:1.65}
+.proj-text strong{color:#1a1a1a}
+.proj-metrics{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1.5rem}
+.pm{background:#f8faff;border:1px solid #dbeafe;padding:1.1rem;text-align:center}
+.pm-val{font-size:1.6rem;font-weight:800;color:#2563eb;display:block;margin-bottom:.2rem}
+.pm-lbl{font-size:.7rem;color:#888}
+.tech-pills{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+.tp{padding:.25rem .65rem;background:#f5f3ff;border:1px solid #e9d5ff;
+  font-size:.7rem;color:#7c3aed;font-weight:500}
 
 /* CONTACT */
-.contact-section{position:relative;z-index:1;
-  max-width:1200px;margin:0 auto;padding:5rem 2rem}
-.contact-box{background:linear-gradient(135deg,rgba(56,189,248,.05),rgba(139,92,246,.04));
-  border:1px solid var(--border);padding:4rem;text-align:center;
-  position:relative;overflow:hidden}
-.contact-box::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,var(--cyan),var(--purple),var(--amber))}
-.contact-badge{display:inline-flex;align-items:center;gap:.45rem;
-  padding:.35rem .9rem;background:rgba(34,197,94,.08);
-  border:1px solid rgba(34,197,94,.2);
-  font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--green);
-  margin-bottom:1.5rem}
-.contact-title{font-size:clamp(2.25rem,5vw,3.5rem);font-weight:800;
-  letter-spacing:-.03em;margin-bottom:1rem}
-.contact-title span{background:linear-gradient(135deg,var(--cyan),var(--purple));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.contact-sub{font-size:.92rem;color:var(--gray);max-width:420px;
+.contact-section{background:#1a1a1a;color:#fff;padding:5rem 3rem;text-align:center}
+.contact-inner{max-width:600px;margin:0 auto}
+.contact-tag{font-size:.72rem;font-weight:700;color:#4ade80;
+  letter-spacing:.15em;text-transform:uppercase;margin-bottom:1rem;
+  display:flex;align-items:center;justify-content:center;gap:.5rem}
+.contact-title{font-size:clamp(2.25rem,4vw,3.25rem);font-weight:800;
+  margin-bottom:1rem;letter-spacing:-.02em}
+.contact-title em{font-family:'Playfair Display',serif;font-style:italic;color:#2563eb}
+.contact-sub{font-size:.92rem;color:#999;max-width:380px;
   margin:0 auto 2.5rem;line-height:1.7}
-.contact-items{display:flex;justify-content:center;gap:.85rem;flex-wrap:wrap;margin-bottom:2rem}
-.ci{padding:.9rem 1.6rem;background:var(--card);border:1px solid var(--border);
+.contact-cards{display:flex;justify-content:center;gap:.85rem;flex-wrap:wrap;margin-bottom:2rem}
+.cc{padding:.9rem 1.5rem;background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.1);
   text-decoration:none;display:flex;align-items:center;gap:.65rem;transition:all .3s}
-.ci:hover{border-color:var(--cyan);transform:translateY(-3px);
-  box-shadow:0 10px 25px rgba(0,0,0,.3)}
-.ci-ico{font-size:1rem}
-.ci-lbl{font-family:'JetBrains Mono',monospace;font-size:.65rem;color:var(--gray2);display:block}
-.ci-val{font-size:.82rem;color:var(--white);font-weight:600}
-.role-pills{display:flex;justify-content:center;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem}
-.rp{padding:.35rem .9rem;background:rgba(56,189,248,.06);
-  border:1px solid var(--border);font-size:.78rem;color:var(--cyan)}
+.cc:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.25);
+  transform:translateY(-2px)}
+.cc-ico{font-size:.95rem}
+.cc-lbl{font-size:.65rem;color:#888;font-weight:500;display:block}
+.cc-val{font-size:.82rem;color:#fff;font-weight:600}
+.roles{display:flex;justify-content:center;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem}
+.role{padding:.35rem .9rem;background:rgba(37,99,235,0.15);
+  border:1px solid rgba(37,99,235,0.25);font-size:.78rem;color:#93c5fd}
 
 /* FOOTER */
-footer{position:relative;z-index:1;padding:1.25rem 2rem;text-align:center;
-  border-top:1px solid var(--border);
-  font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--gray2)}
+footer{padding:1.25rem 3rem;text-align:center;
+  background:#111;font-size:.72rem;color:#555;border-top:1px solid #222}
 
-/* SECTION BG ALT */
-.alt-bg{background:var(--bg2)}
-
-/* ANIMATE */
-@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
-.fu{animation:fadeUp .6s ease forwards}
-.d1{animation-delay:.1s;opacity:0}.d2{animation-delay:.22s;opacity:0}
-.d3{animation-delay:.34s;opacity:0}.d4{animation-delay:.46s;opacity:0}
-.d5{animation-delay:.58s;opacity:0}
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.fu{animation:fadeUp .65s ease forwards}
+.d1{animation-delay:.1s;opacity:0}.d2{animation-delay:.2s;opacity:0}
+.d3{animation-delay:.3s;opacity:0}.d4{animation-delay:.4s;opacity:0}
+.d5{animation-delay:.5s;opacity:0}
 
 /* RESPONSIVE */
-@media(max-width:960px){
-  .hero{grid-template-columns:1fr;gap:2.5rem;padding:3rem 1.5rem}
-  .numbers{grid-template-columns:repeat(2,1fr)}
+@media(max-width:900px){
+  nav{padding:1rem 1.5rem}.nav-links{display:none}
+  .hero{grid-template-columns:1fr;gap:3rem;padding:4rem 1.5rem 3rem}
+  .about-grid{grid-template-columns:1fr}
   .impact-grid{grid-template-columns:1fr 1fr}
-  .sk-grid{grid-template-columns:1fr}
-  .exp-cards{grid-template-columns:1fr}
-  .edu-row{grid-template-columns:1fr}
+  .skills-grid{grid-template-columns:1fr}
+  .exp-card{grid-template-columns:1fr}
+  .edu-grid{grid-template-columns:1fr}
   .cert-grid{grid-template-columns:1fr}
-  .proj-mid{grid-template-columns:1fr}
-  .proj-left{border-right:none;border-bottom:1px solid var(--border)}
-  .contact-box{padding:2.5rem 1.5rem}
-  .wrap{padding:3.5rem 1.5rem}
-  nav{padding:.875rem 1.25rem}
-  .nav-menu{display:none}
+  .proj-body{grid-template-columns:1fr}
+  .proj-left{border-right:none;border-bottom:1px solid rgba(0,0,0,0.06)}
+  .section{padding:3.5rem 1.5rem}
+  .stats-bar{grid-template-columns:repeat(2,1fr)}
+  .contact-section{padding:3.5rem 1.5rem}
 }
 @media(max-width:600px){
   .impact-grid{grid-template-columns:1fr}
-  .numbers{grid-template-columns:repeat(2,1fr)}
-  .pm-grid{grid-template-columns:1fr 1fr}
+  .proj-metrics{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
 <body>
-<div class="bg-mesh"></div>
 
 <!-- NAV -->
 <nav>
-  <span class="nav-logo">VRN // SC</span>
-  <ul class="nav-menu">
+  <a href="#" class="nav-logo">Vineeth Reddy Nomula</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
     <li><a href="#impact">Impact</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#exp">Experience</a></li>
-    <li><a href="#edu">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#project">Project</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="mailto:vineethnomula01@gmail.com" class="nav-cta">HIRE ME</a>
+  <a href="mailto:vineethnomula01@gmail.com" class="nav-resume">Hire Me</a>
 </nav>
 
-<!-- OTW BANNER -->
+<!-- OTW -->
 <div class="otw">
-  <span class="otw-text">
-    <span class="dot"></span>
-    OPEN TO WORK · SUPPLY CHAIN ANALYST · PROCUREMENT ANALYST · OPERATIONS ANALYST · ALL US LOCATIONS
-  </span>
+  <span class="otw-dot"></span>
+  Open to Work · Supply Chain Analyst · Procurement Analyst · Operations Analyst · All US Locations
 </div>
 
 <!-- HERO -->
-<div style="position:relative;z-index:1">
+<div style="background:#fff;border-bottom:1px solid rgba(0,0,0,0.06)">
 <div class="hero">
   <div>
-    <div class="chip fu d1">📍 Alpharetta, GA · Open to Relocation</div>
-    <h1 class="fu d2">
-      <span class="h1-name">Vineeth Reddy</span>
-      <span class="h1-grad">Nomula</span>
-    </h1>
-    <p class="hero-desc fu d3">
-      Supply Chain Analyst with <strong>3 years</strong> of experience turning complex data into decisions that reduce costs, improve delivery, and streamline operations — across <strong>automotive manufacturing</strong> and <strong>power systems</strong>.
+    <p class="hero-greeting fu d1">👋 Hello, I'm</p>
+    <h1 class="fu d2">Vineeth<br><em>Reddy Nomula</em></h1>
+    <p class="hero-bio fu d3">
+      A <strong>Supply Chain Analyst</strong> with 3 years of experience turning messy data into decisions that reduce costs and keep operations running. From <strong>automotive floors in India</strong> to <strong>power systems in Texas</strong> — I build systems that actually work.
     </p>
     <div class="hero-btns fu d4">
-      <a href="mailto:vineethnomula01@gmail.com" class="btn-p">✉ Hire Me</a>
-      <a href="https://linkedin.com/in/vineeth-nomula-b16a2b223" target="_blank" class="btn-s">LinkedIn →</a>
+      <a href="mailto:vineethnomula01@gmail.com" class="btn-main">Get In Touch</a>
+      <a href="https://linkedin.com/in/vineeth-nomula-b16a2b223" target="_blank" class="btn-outline">LinkedIn →</a>
     </div>
-    <div class="tags fu d5">
-      <span class="tag">SAP MM</span><span class="tag">Power BI</span>
-      <span class="tag">SQL</span><span class="tag">Oracle ERP</span>
-      <span class="tag">Demand Planning</span><span class="tag">Procurement</span>
-      <span class="tag">OTIF</span><span class="tag">3PL</span>
-      <span class="tag">Lean</span><span class="tag">Six Sigma</span>
-      <span class="tag">Excel VBA</span><span class="tag">R</span>
+    <div class="hero-socials fu d5">
+      <a href="mailto:vineethnomula01@gmail.com" class="social-link">✉ vineethnomula01@gmail.com</a>
+      <span style="color:#ccc">·</span>
+      <a href="tel:+12038247848" class="social-link">📞 +1-203-824-7848</a>
+      <span style="color:#ccc">·</span>
+      <span class="social-link">📍 Alpharetta, GA</span>
     </div>
   </div>
-  <div class="id-card fu d3">
-    <div class="id-av">VN</div>
-    <div class="id-name">Vineeth Reddy Nomula</div>
-    <div class="id-role">SUPPLY CHAIN ANALYST</div>
-    <div class="id-grid">
-      <div class="id-stat"><span class="id-val">3yr</span><span class="id-lbl">Experience</span></div>
-      <div class="id-stat"><span class="id-val">$2M</span><span class="id-lbl">Spend Managed</span></div>
-      <div class="id-stat"><span class="id-val">96%</span><span class="id-lbl">OTIF Rate</span></div>
-      <div class="id-stat"><span class="id-val">M.S.</span><span class="id-lbl">Bus. Analytics</span></div>
+
+  <div class="photo-wrap fu d3">
+    <div class="photo-frame">
+      <img 
+        src="https://i.imgur.com/fpuqvAC.jpeg" 
+        alt="Vineeth Reddy Nomula - Supply Chain Analyst"
+        onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#eff6ff,#f5f3ff)';this.parentElement.innerHTML+='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:5rem\'>👨‍💼</div>'"
+      >
     </div>
-    <div class="id-info">
-      <div class="id-row"><span>📍</span><span>Alpharetta, GA, USA</span></div>
-      <div class="id-row"><span>🎓</span><span>Univ. of New Haven · 2025</span></div>
-      <div class="id-row"><span>💼</span><span>Cummins Inc. · Force Motors</span></div>
-      <div class="id-row"><span>🔧</span><span>SAP · Power BI · SQL · Oracle</span></div>
-    </div>
-    <div class="avail-badge">
-      <span class="dot"></span>
-      <span class="avail-text">Available Immediately · All US Locations</span>
+    <div class="photo-badge">
+      <span class="badge-val">96%</span>
+      <span class="badge-lbl">OTIF Achieved</span>
     </div>
   </div>
 </div>
 </div>
 
-<!-- NUMBERS -->
-<div class="numbers" style="position:relative;z-index:1">
-  <div class="num-tile">
-    <span class="num-big">$120K</span>
-    <span class="num-label">Freight cost savings through supplier data analysis</span>
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat-tile">
+    <div class="stat-num">$<span>120K</span></div>
+    <div class="stat-desc">Freight cost savings through supplier analysis</div>
   </div>
-  <div class="num-tile">
-    <span class="num-big">96%</span>
-    <span class="num-label">OTIF rate on $500K monthly freight spend</span>
+  <div class="stat-tile">
+    <div class="stat-num"><span>96</span>%</div>
+    <div class="stat-desc">OTIF rate on $500K monthly freight spend</div>
   </div>
-  <div class="num-tile">
-    <span class="num-big">87%</span>
-    <span class="num-label">Reporting time saved through automation</span>
+  <div class="stat-tile">
+    <div class="stat-num"><span>87</span>%</div>
+    <div class="stat-desc">Reporting time saved through automation</div>
   </div>
-  <div class="num-tile">
-    <span class="num-big">21%</span>
-    <span class="num-label">Faster PO processing by removing duplicate approvals</span>
+  <div class="stat-tile">
+    <div class="stat-num">$<span>2M</span></div>
+    <div class="stat-desc">Annual procurement spend managed</div>
   </div>
 </div>
+
+<!-- ABOUT -->
+<div class="section" id="about">
+  <p class="section-tag">About Me</p>
+  <div class="about-grid">
+    <div class="about-text">
+      <h2 class="section-title" style="margin-bottom:1.5rem">I turn supply chain complexity into clarity.</h2>
+      <p>I grew up in India, built my supply chain foundation at <strong>Force Motors</strong> in Pune, and then came to the US to pursue my <strong>Master's in Business Analytics</strong> at the University of New Haven.</p>
+      <p>At <strong>Cummins Inc.</strong> in Texas, I work at the intersection of data and operations — building dashboards that 12+ stakeholders rely on, auditing suppliers to find savings, and making sure freight moves on time every time.</p>
+      <p>I'm now actively seeking my next opportunity — a role where I can apply both my <strong>operational experience</strong> and <strong>analytics skills</strong> to make a real impact from day one.</p>
+    </div>
+    <div class="about-facts">
+      <div class="fact">
+        <span class="fact-icon">🎓</span>
+        <div class="fact-text">
+          <strong>M.S. Business Analytics</strong>
+          University of New Haven · 2025
+        </div>
+      </div>
+      <div class="fact">
+        <span class="fact-icon">💼</span>
+        <div class="fact-text">
+          <strong>3 Years Experience</strong>
+          Automotive & Power Systems Manufacturing
+        </div>
+      </div>
+      <div class="fact">
+        <span class="fact-icon">🔧</span>
+        <div class="fact-text">
+          <strong>Core Tools</strong>
+          SAP MM · Oracle ERP · Power BI · SQL · Excel VBA
+        </div>
+      </div>
+      <div class="fact">
+        <span class="fact-icon">📍</span>
+        <div class="fact-text">
+          <strong>Based in Alpharetta, GA</strong>
+          Open to all US locations & relocation
+        </div>
+      </div>
+      <div class="fact">
+        <span class="fact-icon">✅</span>
+        <div class="fact-text">
+          <strong>Open to Work</strong>
+          Full-time · Contract · Contract-to-hire
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
 
 <!-- IMPACT -->
-<div class="wrap" id="impact">
-  <p class="eyebrow">Proven Results</p>
-  <h2 class="sec-title">Impact by the Numbers</h2>
-  <p class="sec-sub">Real results from real operations — every number is traceable to a specific action.</p>
+<div class="section" id="impact">
+  <p class="section-tag">Proven Results</p>
+  <h2 class="section-title">Impact by the Numbers</h2>
+  <p class="section-sub">Every number here represents a real problem solved — not theory, not academic exercises.</p>
   <div class="impact-grid">
-    <div class="ic"><div class="ic-ico">💰</div><div class="ic-num">$120K</div><p class="ic-desc">Freight cost reduction through SQL-based supplier performance auditing across 40+ vendors at Cummins Inc.</p><span class="ic-badge">CUMMINS · 2025</span></div>
-    <div class="ic"><div class="ic-ico">📦</div><div class="ic-num">18%</div><p class="ic-desc">Reduction in supplier-related delays by identifying 6 underperforming vendors and implementing corrective action plans.</p><span class="ic-badge">CUMMINS · 2025</span></div>
-    <div class="ic"><div class="ic-ico">⚡</div><div class="ic-num">87%</div><p class="ic-desc">Weekly reporting time saved by automating 5 KPI reports using Excel macros, freeing 15+ analyst hours per week.</p><span class="ic-badge">CUMMINS · 2025</span></div>
-    <div class="ic"><div class="ic-ico">🚚</div><div class="ic-num">+10pt</div><p class="ic-desc">OTIF improvement from 84% to 94% over 8 months by restructuring 3PL delivery windows and carrier tracking.</p><span class="ic-badge">FORCE MOTORS · 2022</span></div>
-    <div class="ic"><div class="ic-ico">⏱</div><div class="ic-num">21%</div><p class="ic-desc">Faster purchase order processing by eliminating a duplicate approval stage — reduced cycle from 14 to 11 days.</p><span class="ic-badge">FORCE MOTORS · 2022</span></div>
-    <div class="ic"><div class="ic-ico">📉</div><div class="ic-num">$100K</div><p class="ic-desc">Annual savings from renegotiating 3 supplier contracts through volume commitment strategies on $2M annual spend.</p><span class="ic-badge">FORCE MOTORS · 2022</span></div>
+    <div class="icard">
+      <div class="icard-num">$120K</div>
+      <p class="icard-desc">Freight cost reduction through SQL-based supplier auditing of 40+ vendors at Cummins Inc.</p>
+      <p class="icard-co">Cummins Inc. · 2025</p>
+    </div>
+    <div class="icard">
+      <div class="icard-num">18%</div>
+      <p class="icard-desc">Reduction in supplier delays by identifying 6 underperformers and driving corrective action plans.</p>
+      <p class="icard-co">Cummins Inc. · 2025</p>
+    </div>
+    <div class="icard">
+      <div class="icard-num">87%</div>
+      <p class="icard-desc">Weekly reporting time saved by automating 5 KPI reports using Excel macros — 15+ hours freed weekly.</p>
+      <p class="icard-co">Cummins Inc. · 2025</p>
+    </div>
+    <div class="icard">
+      <div class="icard-num">+10pt</div>
+      <p class="icard-desc">OTIF improvement from 84% to 94% over 8 months by restructuring 3PL delivery windows.</p>
+      <p class="icard-co">Force Motors · 2022</p>
+    </div>
+    <div class="icard">
+      <div class="icard-num">21%</div>
+      <p class="icard-desc">Faster PO processing by eliminating a duplicate approval stage — reduced cycle from 14 to 11 days.</p>
+      <p class="icard-co">Force Motors · 2022</p>
+    </div>
+    <div class="icard">
+      <div class="icard-num">$100K</div>
+      <p class="icard-desc">Annual savings from renegotiating 3 supplier contracts through volume commitments on $2M annual spend.</p>
+      <p class="icard-co">Force Motors · 2022</p>
+    </div>
   </div>
 </div>
 
+<hr class="divider">
+
 <!-- SKILLS -->
-<div style="position:relative;z-index:1" class="alt-bg">
-<div class="wrap" id="skills">
-  <p class="eyebrow">Technical Arsenal</p>
-  <h2 class="sec-title">Skills & Proficiency</h2>
-  <p class="sec-sub">Used daily in real operations — not just listed on a resume.</p>
-  <div class="sk-grid">
-    <div class="sk-card">
-      <p class="sk-head">⚙ ERP Systems</p>
-      <div class="sk-rows">
+<div class="section" style="background:#fafafa" id="skills">
+  <p class="section-tag">Technical Skills</p>
+  <h2 class="section-title">Skills & Proficiency</h2>
+  <p class="section-sub">Used daily in real operations — not just listed on a resume.</p>
+  <div class="skills-grid">
+    <div class="sk">
+      <p class="sk-title">⚙ ERP Systems</p>
+      <div class="sk-items">
         <div><div class="sk-row"><span class="sk-name">SAP MM Module</span><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div></div>
         <div><div class="sk-row"><span class="sk-name">Oracle ERP</span><span class="sk-pct">75%</span></div><div class="sk-bar"><div class="sk-fill" style="width:75%"></div></div></div>
         <div><div class="sk-row"><span class="sk-name">Microsoft Dynamics 365</span><span class="sk-pct">70%</span></div><div class="sk-bar"><div class="sk-fill" style="width:70%"></div></div></div>
-        <div><div class="sk-row"><span class="sk-name">Teamcenter PLM</span><span class="sk-pct">65%</span></div><div class="sk-bar"><div class="sk-fill" style="width:65%"></div></div></div>
       </div>
     </div>
-    <div class="sk-card">
-      <p class="sk-head">📊 Data & Analytics</p>
-      <div class="sk-rows">
+    <div class="sk">
+      <p class="sk-title">📊 Data & Analytics</p>
+      <div class="sk-items">
         <div><div class="sk-row"><span class="sk-name">Excel (Advanced + VBA)</span><span class="sk-pct">93%</span></div><div class="sk-bar"><div class="sk-fill" style="width:93%"></div></div></div>
         <div><div class="sk-row"><span class="sk-name">Power BI</span><span class="sk-pct">88%</span></div><div class="sk-bar"><div class="sk-fill" style="width:88%"></div></div></div>
         <div><div class="sk-row"><span class="sk-name">SQL / BigQuery</span><span class="sk-pct">78%</span></div><div class="sk-bar"><div class="sk-fill" style="width:78%"></div></div></div>
         <div><div class="sk-row"><span class="sk-name">R / Tableau</span><span class="sk-pct">72%</span></div><div class="sk-bar"><div class="sk-fill" style="width:72%"></div></div></div>
       </div>
     </div>
-    <div class="sk-card">
-      <p class="sk-head">🔗 Supply Chain</p>
-      <div class="sk-rows">
+    <div class="sk">
+      <p class="sk-title">🔗 Supply Chain</p>
+      <div class="sk-items">
         <div><div class="sk-row"><span class="sk-name">Procurement Analytics</span><span class="sk-pct">91%</span></div><div class="sk-bar"><div class="sk-fill" style="width:91%"></div></div></div>
-        <div><div class="sk-row"><span class="sk-name">Demand Planning & Forecasting</span><span class="sk-pct">83%</span></div><div class="sk-bar"><div class="sk-fill" style="width:83%"></div></div></div>
+        <div><div class="sk-row"><span class="sk-name">Demand Planning</span><span class="sk-pct">83%</span></div><div class="sk-bar"><div class="sk-fill" style="width:83%"></div></div></div>
         <div><div class="sk-row"><span class="sk-name">Inventory Optimization</span><span class="sk-pct">86%</span></div><div class="sk-bar"><div class="sk-fill" style="width:86%"></div></div></div>
         <div><div class="sk-row"><span class="sk-name">3PL & Carrier Management</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div></div>
       </div>
     </div>
-    <div class="sk-card">
-      <p class="sk-head">🏭 Methodologies</p>
-      <div class="sk-rows">
+    <div class="sk">
+      <p class="sk-title">🏭 Methodologies</p>
+      <div class="sk-items">
         <div><div class="sk-row"><span class="sk-name">Lean Manufacturing</span><span class="sk-pct">87%</span></div><div class="sk-bar"><div class="sk-fill" style="width:87%"></div></div></div>
         <div><div class="sk-row"><span class="sk-name">Six Sigma</span><span class="sk-pct">76%</span></div><div class="sk-bar"><div class="sk-fill" style="width:76%"></div></div></div>
         <div><div class="sk-row"><span class="sk-name">Continuous Improvement</span><span class="sk-pct">89%</span></div><div class="sk-bar"><div class="sk-fill" style="width:89%"></div></div></div>
-        <div><div class="sk-row"><span class="sk-name">ISO 9001 / 5S</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div></div>
       </div>
     </div>
   </div>
 </div>
-</div>
+
+<hr class="divider">
 
 <!-- EXPERIENCE -->
-<div class="wrap" id="exp">
-  <p class="eyebrow">Work History</p>
-  <h2 class="sec-title">Experience</h2>
-  <p class="sec-sub">3 years across two continents, two industries, one mission — operational excellence.</p>
-  <div class="exp-cards">
-    <div class="ec">
-      <div class="ec-top">
-        <span class="ec-co">Cummins Inc.</span>
-        <span class="ec-date">May 2025 – Present<br>Texas, USA</span>
+<div class="section" id="experience">
+  <p class="section-tag">Work History</p>
+  <h2 class="section-title">Experience</h2>
+  <p class="section-sub">3 years across two continents, two industries, one mission.</p>
+  <div class="exp-list">
+    <div class="exp-card">
+      <div class="exp-left">
+        <p class="exp-co">Cummins Inc.</p>
+        <p class="exp-period">May 2025 – Present</p>
+        <p class="exp-loc">Texas, USA</p>
+        <div class="exp-chips">
+          <span class="exp-chip">SAP MM</span>
+          <span class="exp-chip">Power BI</span>
+          <span class="exp-chip">SQL</span>
+          <span class="exp-chip">Excel VBA</span>
+        </div>
       </div>
-      <span class="ec-role">Supply Chain Analyst · Power Systems</span>
-      <ul class="ec-list">
-        <li>Built <strong>3 Power BI dashboards</strong> for 12 stakeholders — cut reporting time by 87%</li>
-        <li>Audited <strong>40+ suppliers</strong> via SQL — drove $120K in freight cost savings</li>
-        <li>Achieved <strong>96% OTIF</strong> on 80+ monthly shipments worth $500K freight</li>
-        <li>Improved forecast visibility <strong>1 to 3 weeks</strong> — reduced schedule changes by 30%</li>
-        <li>Eliminated redundant PO approval stage — cut <strong>cycle time by 2 days</strong></li>
-      </ul>
-      <div class="ec-chips">
-        <span class="ec-chip">SAP MM</span><span class="ec-chip">Power BI</span>
-        <span class="ec-chip">BigQuery SQL</span><span class="ec-chip">Excel VBA</span>
-        <span class="ec-chip">OTIF</span><span class="ec-chip">3PL</span>
+      <div class="exp-right">
+        <p class="exp-role">Supply Chain Analyst · Manufacturing & Power Systems</p>
+        <ul class="exp-points">
+          <li>Built <strong>3 Power BI dashboards</strong> for 12 stakeholders — cut reporting time by 87%</li>
+          <li>Audited <strong>40+ suppliers</strong> via SQL — drove $120K in freight savings</li>
+          <li>Achieved <strong>96% OTIF</strong> on 80+ monthly shipments worth $500K freight</li>
+          <li>Improved forecast visibility from <strong>1 to 3 weeks</strong> — reduced changes by 30%</li>
+          <li>Eliminated redundant PO approval stage — cut <strong>cycle time by 2 days</strong></li>
+        </ul>
       </div>
     </div>
-    <div class="ec">
-      <div class="ec-top">
-        <span class="ec-co">Force Motors</span>
-        <span class="ec-date">May 2021 – Jun 2023<br>Pune, India</span>
+    <div class="exp-card">
+      <div class="exp-left">
+        <p class="exp-co">Force Motors</p>
+        <p class="exp-period">May 2021 – Jun 2023</p>
+        <p class="exp-loc">Pune, India</p>
+        <div class="exp-chips">
+          <span class="exp-chip">SAP MM</span>
+          <span class="exp-chip">Oracle ERP</span>
+          <span class="exp-chip">Power BI</span>
+          <span class="exp-chip">3PL</span>
+        </div>
       </div>
-      <span class="ec-role">Supply Chain Analyst · Automotive</span>
-      <ul class="ec-list">
-        <li>Managed <strong>$2M annual procurement</strong> — saved $100K through renegotiation</li>
-        <li>Drove OTIF <strong>84% → 94%</strong> over 8 months via 3PL restructuring</li>
-        <li>Reduced PO timeline <strong>21% faster</strong> — 14 days to 11 days</li>
-        <li>Cut production downtime <strong>12%</strong> — $40K avoided annually</li>
-        <li>Zero SAP audit findings over <strong>2 years</strong> managing 200+ SKUs</li>
-      </ul>
-      <div class="ec-chips">
-        <span class="ec-chip">SAP MM</span><span class="ec-chip">Oracle ERP</span>
-        <span class="ec-chip">Power BI</span><span class="ec-chip">SQL</span>
-        <span class="ec-chip">3PL</span><span class="ec-chip">Lean</span>
+      <div class="exp-right">
+        <p class="exp-role">Supply Chain Analyst · Automotive Manufacturing</p>
+        <ul class="exp-points">
+          <li>Managed <strong>$2M annual procurement</strong> — saved $100K through renegotiation</li>
+          <li>Drove OTIF from <strong>84% to 94%</strong> over 8 months via 3PL restructuring</li>
+          <li>Reduced PO processing <strong>21% faster</strong> — 14 days to 11 days</li>
+          <li>Cut production downtime <strong>12%</strong> — $40K avoided annually</li>
+          <li>Zero SAP audit findings over <strong>2 years</strong> managing 200+ SKUs</li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
+
+<hr class="divider">
 
 <!-- EDUCATION + CERTS -->
-<div style="position:relative;z-index:1" class="alt-bg">
-<div class="wrap" id="edu">
-  <p class="eyebrow">Academic Background</p>
-  <h2 class="sec-title">Education</h2>
-  <p class="sec-sub">Operations expertise backed by advanced analytics education.</p>
-  <div class="edu-row">
-    <div class="edu-c">
-      <div class="edu-ico">🎓</div>
-      <div class="edu-deg">Master of Science in Business Analytics</div>
-      <div class="edu-sch">University of New Haven</div>
-      <div class="edu-meta">West Haven, CT, USA · May 2025</div>
+<div class="section" style="background:#fafafa" id="education">
+  <p class="section-tag">Academic Background</p>
+  <h2 class="section-title">Education</h2>
+  <p class="section-sub">Operations expertise backed by advanced analytics education.</p>
+  <div class="edu-grid">
+    <div class="edu-card">
+      <div class="edu-icon">🎓</div>
+      <p class="edu-deg">Master of Science in Business Analytics</p>
+      <p class="edu-school">University of New Haven</p>
+      <p class="edu-meta">West Haven, CT, USA · May 2025</p>
     </div>
-    <div class="edu-c">
-      <div class="edu-ico">📚</div>
-      <div class="edu-deg">Bachelor of Business Administration</div>
-      <div class="edu-sch">Satavahana University</div>
-      <div class="edu-meta">Karimnagar, India · 2023</div>
+    <div class="edu-card">
+      <div class="edu-icon">📚</div>
+      <p class="edu-deg">Bachelor of Business Administration</p>
+      <p class="edu-school">Satavahana University</p>
+      <p class="edu-meta">Karimnagar, India · 2023</p>
     </div>
   </div>
-  <p class="eyebrow">Certifications</p>
-  <h2 class="sec-title" style="font-size:1.6rem;margin-bottom:.5rem">Certifications & Learning</h2>
-  <p class="sec-sub">Continuously building on core expertise.</p>
+  <p class="section-tag">Certifications</p>
+  <h2 class="section-title" style="font-size:1.75rem;margin-bottom:.5rem">Certifications</h2>
+  <p class="section-sub">Continuously building on core expertise.</p>
   <div class="cert-grid">
-    <div class="cert-c"><div class="cert-ico">🏅</div><div><div class="cert-name">Google Data Analytics Professional</div><div class="cert-by">Google via Coursera</div></div><span class="cert-yr">2024</span></div>
-    <div class="cert-c"><div class="cert-ico">🔗</div><div><div class="cert-name">Supply Chain Logistics</div><div class="cert-by">Rutgers University via Coursera</div></div><span class="cert-yr ip">In Progress</span></div>
-    <div class="cert-c"><div class="cert-ico">📊</div><div><div class="cert-name">Power BI Data Analytics</div><div class="cert-by">Microsoft Learn</div></div><span class="cert-yr">2024</span></div>
-    <div class="cert-c"><div class="cert-ico">🏭</div><div><div class="cert-name">Supply Chain Management Fundamentals</div><div class="cert-by">LinkedIn Learning</div></div><span class="cert-yr">2024</span></div>
+    <div class="cert"><span class="cert-ico">🏅</span><div><p class="cert-name">Google Data Analytics Professional</p><p class="cert-by">Google via Coursera</p></div><span class="cert-badge">2024</span></div>
+    <div class="cert"><span class="cert-ico">🔗</span><div><p class="cert-name">Supply Chain Logistics</p><p class="cert-by">Rutgers University via Coursera</p></div><span class="cert-badge ip">In Progress</span></div>
+    <div class="cert"><span class="cert-ico">📊</span><div><p class="cert-name">Power BI Data Analytics</p><p class="cert-by">Microsoft Learn</p></div><span class="cert-badge">2024</span></div>
+    <div class="cert"><span class="cert-ico">🏭</span><div><p class="cert-name">Supply Chain Management Fundamentals</p><p class="cert-by">LinkedIn Learning</p></div><span class="cert-badge">2024</span></div>
   </div>
-</div>
 </div>
 
+<hr class="divider">
+
 <!-- PROJECT -->
-<div class="wrap" id="project">
-  <p class="eyebrow">Featured Analytics Work</p>
-  <h2 class="sec-title">Capstone Project</h2>
-  <p class="sec-sub">Applying data science to real-world supply chain and demand forecasting challenges.</p>
+<div class="section" id="project">
+  <p class="section-tag">Featured Work</p>
+  <h2 class="section-title">Analytics Project</h2>
+  <p class="section-sub">Applying data science to real demand forecasting challenges.</p>
   <div class="proj-box">
-    <div class="proj-top">
-      <p class="proj-lbl">M.S. Capstone · University of New Haven · 2025</p>
+    <div class="proj-header">
+      <p class="proj-tag">M.S. Capstone · University of New Haven · 2025</p>
       <h3 class="proj-title">Customer Analytics & Demand Forecasting</h3>
-      <p class="proj-desc">Analyzed 2 years of transaction data for Nata Supermarkets — a Canadian retail chain — to solve promotion targeting and demand forecasting challenges. Final recommendations adopted as the foundation for their 2025 merchandising roadmap.</p>
+      <p class="proj-desc">Analyzed 2 years of transaction data for Nata Supermarkets — a Canadian retail chain — to solve promotion targeting and demand forecasting challenges. Recommendations were adopted as the foundation for their 2025 merchandising roadmap.</p>
     </div>
-    <div class="proj-mid">
+    <div class="proj-body">
       <div class="proj-left">
-        <p class="proj-sec-title">Key Results</p>
-        <div class="proj-results">
-          <div class="pr-item"><div class="pr-dot"></div><p class="pr-text">Built a <strong>logistic regression model (AUC 0.78)</strong> to predict promotion responders, improving targeting precision over baseline.</p></div>
-          <div class="pr-item"><div class="pr-dot"></div><p class="pr-text">Segmented customers into <strong>4 behavioral clusters</strong> using K-Means, revealing patterns by age, income, and channel.</p></div>
-          <div class="pr-item"><div class="pr-dot"></div><p class="pr-text">Delivered <strong>Tableau and R dashboards</strong> adopted by leadership as their 2025 marketing strategy foundation.</p></div>
+        <p class="proj-sec">Key Results</p>
+        <div class="proj-items">
+          <div class="proj-item"><div class="proj-dot"></div><p class="proj-text">Built a <strong>logistic regression model (AUC 0.78)</strong> to predict promotion responders, improving targeting precision over baseline.</p></div>
+          <div class="proj-item"><div class="proj-dot"></div><p class="proj-text">Segmented customers into <strong>4 behavioral clusters</strong> using K-Means clustering by age, income, and channel.</p></div>
+          <div class="proj-item"><div class="proj-dot"></div><p class="proj-text">Delivered <strong>Tableau and R dashboards</strong> adopted by leadership for their 2025 marketing strategy.</p></div>
         </div>
-        <div class="tech-row" style="margin-top:1.25rem">
-          <span class="tech-p">R</span><span class="tech-p">Logistic Regression</span>
-          <span class="tech-p">K-Means Clustering</span><span class="tech-p">Tableau</span>
-          <span class="tech-p">Demand Forecasting</span>
+        <div class="tech-pills" style="margin-top:1.5rem">
+          <span class="tp">R</span><span class="tp">Logistic Regression</span>
+          <span class="tp">K-Means Clustering</span><span class="tp">Tableau</span>
+          <span class="tp">Demand Forecasting</span>
         </div>
       </div>
       <div class="proj-right">
-        <p class="proj-sec-title">Project Metrics</p>
-        <div class="pm-grid">
+        <p class="proj-sec">Metrics</p>
+        <div class="proj-metrics">
           <div class="pm"><span class="pm-val">0.78</span><span class="pm-lbl">AUC Score</span></div>
           <div class="pm"><span class="pm-val">4</span><span class="pm-lbl">Segments</span></div>
-          <div class="pm"><span class="pm-val">2yr</span><span class="pm-lbl">Data Analyzed</span></div>
-          <div class="pm"><span class="pm-val">✓</span><span class="pm-lbl">Adopted 2025</span></div>
+          <div class="pm"><span class="pm-val">2yr</span><span class="pm-lbl">Data</span></div>
+          <div class="pm"><span class="pm-val">✓</span><span class="pm-lbl">Adopted</span></div>
         </div>
       </div>
     </div>
@@ -627,31 +686,21 @@ footer{position:relative;z-index:1;padding:1.25rem 2rem;text-align:center;
 
 <!-- CONTACT -->
 <div class="contact-section" id="contact">
-  <div class="contact-box">
-    <div class="contact-badge"><span class="dot"></span>OPEN TO WORK · AVAILABLE IMMEDIATELY</div>
-    <h2 class="contact-title">Let's <span>Work Together</span></h2>
-    <p class="contact-sub">Looking for a Supply Chain Analyst who delivers measurable results? I'm available immediately across all US locations.</p>
-    <div class="contact-items">
-      <a href="mailto:vineethnomula01@gmail.com" class="ci">
-        <span class="ci-ico">✉</span>
-        <div><span class="ci-lbl">Email</span><span class="ci-val">vineethnomula01@gmail.com</span></div>
-      </a>
-      <a href="tel:+12038247848" class="ci">
-        <span class="ci-ico">📞</span>
-        <div><span class="ci-lbl">Phone</span><span class="ci-val">+1-203-824-7848</span></div>
-      </a>
-      <a href="https://linkedin.com/in/vineeth-nomula-b16a2b223" target="_blank" class="ci">
-        <span class="ci-ico">💼</span>
-        <div><span class="ci-lbl">LinkedIn</span><span class="ci-val">vineeth-nomula-b16a2b223</span></div>
-      </a>
+  <div class="contact-inner">
+    <p class="contact-tag"><span class="otw-dot"></span> Open to Work · Available Now</p>
+    <h2 class="contact-title">Let's Work <em>Together</em></h2>
+    <p class="contact-sub">Looking for a Supply Chain Analyst who delivers real results? I'm available immediately across all US locations.</p>
+    <div class="contact-cards">
+      <a href="mailto:vineethnomula01@gmail.com" class="cc"><span class="cc-ico">✉</span><div><span class="cc-lbl">Email</span><span class="cc-val">vineethnomula01@gmail.com</span></div></a>
+      <a href="tel:+12038247848" class="cc"><span class="cc-ico">📞</span><div><span class="cc-lbl">Phone</span><span class="cc-val">+1-203-824-7848</span></div></a>
+      <a href="https://linkedin.com/in/vineeth-nomula-b16a2b223" target="_blank" class="cc"><span class="cc-ico">💼</span><div><span class="cc-lbl">LinkedIn</span><span class="cc-val">vineeth-nomula-b16a2b223</span></div></a>
     </div>
-    <div class="role-pills">
-      <span class="rp">Supply Chain Analyst</span>
-      <span class="rp">Procurement Analyst</span>
-      <span class="rp">Operations Analyst</span>
-      <span class="rp">Demand Planning Analyst</span>
-      <span class="rp">Transportation Specialist</span>
-      <span class="rp">Sourcing Analyst</span>
+    <div class="roles">
+      <span class="role">Supply Chain Analyst</span>
+      <span class="role">Procurement Analyst</span>
+      <span class="role">Operations Analyst</span>
+      <span class="role">Demand Planning Analyst</span>
+      <span class="role">Transportation Specialist</span>
     </div>
   </div>
 </div>
